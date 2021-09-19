@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genetic Algorithm</title>
+    <style>
+        .data {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                ". . . .";
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Algoritmo Genetico</h1>
+        <div class="data">
+            <div>
+                <p>Altura:</p>
+                <div>
+                    <input type="radio" id="high"
+                    name="height" value="high" checked>
+                    <label for="high">Alto</label>
+
+                    <input type="radio" id="medium"
+                    name="height" value="medium">
+                    <label for="medium">Medio</label>
+
+                    <input type="radio" id="low"
+                    name="height" value="low">
+                    <label for="low">Bajo</label>
+                </div>
+            </div>
+            <div>
+                <p>Color:</p>
+                <div>
+                    <input type="radio" id="red"
+                    name="color" value="red" checked>
+                    <label for="red">Rojo</label>
+
+                    <input type="radio" id="blue"
+                    name="color" value="blue">
+                    <label for="blue">Azul</label>
+
+                    <input type="radio" id="yellow"
+                    name="color" value="yellow">
+                    <label for="yellow">Amarillo</label>
+                </div>
+            </div>
+            <div>
+                <p>Tamaño:</p>
+                <div>
+                    <input type="radio" id="small"
+                    name="size" value="small" checked>
+                    <label for="small">Pequeño</label>
+
+                    <input type="radio" id="normal"
+                    name="size" value="normal">
+                    <label for="normal">Normal</label>
+
+                    <input type="radio" id="large"
+                    name="size" value="large">
+                    <label for="large">Grande</label>
+                </div>
+            </div>
+            <div>
+                <h1>📈 Informacion de la evolucion:</h1>
+                <p id="generation"></p>
+            </div>
+        </div>
+        <div class="demo">
+            <canvas id="canvas" width="1200" height="600"></canvas>
+        </div>
+    </div>
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
